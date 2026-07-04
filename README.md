@@ -1,6 +1,5 @@
 # Learning Bipedal Locomotion for THORMANG3 with Deep RL
 
-**MuJoCo · PPO vs SAC · domain randomization · push recovery · real-time telemetry**
 
 A complete reinforcement-learning pipeline that teaches the
 [ROBOTIS THORMANG3](https://emanual.robotis.com/docs/en/platform/thormang3/thormang3_ros_packages/)
@@ -11,6 +10,26 @@ quality. Policies are trained against **random push perturbations**,
 **dynamics randomization** (mass, friction) and **sensor noise**. Demo
 videos include a **real-time map** (trajectory, footsteps, applied pushes)
 with live speed and gait telemetry.
+
+---
+
+## 🎬 Demo
+
+> Click any video below — GitHub plays `.mp4` files directly in the browser.
+
+| | |
+|---|---|
+| ▶️ **[PPO walking demo](runs/ppo/videos/demo.mp4)** | trained PPO policy walking under random pushes — 3D view + HUD + live map / speed / gait dashboard (24 s) |
+| ▶️ **[SAC walking demo](runs/sac/videos/demo.mp4)** | the same demo for the trained SAC policy (24 s) |
+| ▶️ **[PPO vs SAC race](runs/ppo/videos/race.mp4)** | both policies side by side on the same seed, with live speed / distance / falls HUDs (20 s) |
+| ▶️ **[Early-training gait (2M steps)](runs/walk/videos/demo_2M_steps.mp4)** | what the gait looked like early in training, for comparison |
+
+To regenerate the demos from a trained run:
+
+```bash
+python record_video.py --run runs/ppo --seconds 24
+python race_video.py --left runs/ppo --right runs/sac --seconds 20
+```
 
 ---
 
@@ -55,10 +74,10 @@ Ctrl-C during training is safe (`final_model.zip` is written); continue with
 
 | file | content |
 |---|---|
-| `runs/ppo/videos/demo.mp4` | PPO walking, 3D view + HUD + **live map / speed / gait panel**, pushes marked with a red **PUSH** badge and a force arrow on the map |
-| `runs/sac/videos/demo.mp4` | the same for SAC |
-| `runs/ppo/videos/race.mp4` | **PPO vs SAC side by side**, same seed, live speed/distance/falls HUDs |
-| `runs/walk/videos/demo_2M_steps.mp4` | early-training gait (first pipeline version, 2M steps) |
+| [`runs/ppo/videos/demo.mp4`](runs/ppo/videos/demo.mp4) | PPO walking, 3D view + HUD + **live map / speed / gait panel**, pushes marked with a red **PUSH** badge and a force arrow on the map |
+| [`runs/sac/videos/demo.mp4`](runs/sac/videos/demo.mp4) | the same for SAC |
+| [`runs/ppo/videos/race.mp4`](runs/ppo/videos/race.mp4) | **PPO vs SAC side by side**, same seed, live speed/distance/falls HUDs |
+| [`runs/walk/videos/demo_2M_steps.mp4`](runs/walk/videos/demo_2M_steps.mp4) | early-training gait (first pipeline version, 2M steps) |
 
 The dashboard panel is drawn live every frame: top-down **map** with the
 pelvis trajectory, left/right footstep touchdown positions and the current
@@ -201,6 +220,3 @@ and verifies everything (stand-hold test, CoM centring, flat-foot check):
 
 Simulation: MuJoCo 3, $\Delta t=2.5$ ms, `implicitfast` integrator, box feet
 ↔ floor and leg ↔ leg collisions only, frame skip 8 (50 Hz control).
-
-
-

@@ -1,0 +1,264 @@
+<mujoco model="thormang3">
+  <compiler angle="radian" meshdir="/home/ntnu/Desktop/MuJoco/thormang3_walk/assets/meshes/"/>
+
+  <asset>
+    <mesh name="robotis_pelvis_link" content_type="model/stl" file="robotis_pelvis_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_chest_link" content_type="model/stl" file="robotis_chest_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_arm_sh_p1_link" content_type="model/stl" file="robotis_l_arm_sh_p1_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_arm_sh_r_link" content_type="model/stl" file="robotis_l_arm_sh_r_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_arm_sh_p2_link" content_type="model/stl" file="robotis_l_arm_sh_p2_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_arm_el_y_link" content_type="model/stl" file="robotis_l_arm_el_y_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_arm_wr_r_link" content_type="model/stl" file="robotis_l_arm_wr_r_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_arm_wr_y_link" content_type="model/stl" file="robotis_l_arm_wr_y_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_arm_wr_p_link" content_type="model/stl" file="robotis_l_arm_wr_p_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_arm_grip_link" content_type="model/stl" file="robotis_l_arm_grip_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_arm_grip_1_link" content_type="model/stl" file="robotis_l_arm_grip_1_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_arm_sh_p1_link" content_type="model/stl" file="robotis_r_arm_sh_p1_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_arm_sh_r_link" content_type="model/stl" file="robotis_r_arm_sh_r_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_arm_sh_p2_link" content_type="model/stl" file="robotis_r_arm_sh_p2_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_arm_el_y_link" content_type="model/stl" file="robotis_r_arm_el_y_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_arm_wr_r_link" content_type="model/stl" file="robotis_r_arm_wr_r_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_arm_wr_y_link" content_type="model/stl" file="robotis_r_arm_wr_y_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_arm_wr_p_link" content_type="model/stl" file="robotis_r_arm_wr_p_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_arm_grip_1_link" content_type="model/stl" file="robotis_r_arm_grip_1_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_arm_grip_link" content_type="model/stl" file="robotis_r_arm_grip_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_leg_hip_y_link" content_type="model/stl" file="robotis_l_leg_hip_y_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_leg_hip_r_link" content_type="model/stl" file="robotis_l_leg_hip_r_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_leg_hip_p_link" content_type="model/stl" file="robotis_l_leg_hip_p_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_leg_kn_p_link" content_type="model/stl" file="robotis_l_leg_kn_p_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_leg_an_p_link" content_type="model/stl" file="robotis_l_leg_an_p_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_leg_an_r_link" content_type="model/stl" file="robotis_l_leg_an_r_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_l_leg_foot" content_type="model/stl" file="robotis_l_leg_foot.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_leg_hip_y_link" content_type="model/stl" file="robotis_r_leg_hip_y_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_leg_hip_r_link" content_type="model/stl" file="robotis_r_leg_hip_r_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_leg_hip_p_link" content_type="model/stl" file="robotis_r_leg_hip_p_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_leg_kn_p_link" content_type="model/stl" file="robotis_r_leg_kn_p_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_leg_an_p_link" content_type="model/stl" file="robotis_r_leg_an_p_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_leg_an_r_link" content_type="model/stl" file="robotis_r_leg_an_r_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_r_leg_foot" content_type="model/stl" file="robotis_r_leg_foot.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_head_y_link" content_type="model/stl" file="robotis_head_y_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="robotis_head_p_link" content_type="model/stl" file="robotis_head_p_link.stl" scale="0.001 0.001 0.001"/>
+  </asset>
+
+  <worldbody>
+    <body name="pelvis_link">
+      <inertial pos="-0.011 0 0.058" quat="0.517196 0.517196 -0.482191 0.482191" mass="6.869" diaginertia="0.0383112 0.0360188 0.0221"/>
+      <geom size="0.1 0.125 0.085" pos="-0.01 0 0.07" type="box"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_pelvis_link"/>
+      <body name="chest_link" pos="0 0 0.1705">
+        <inertial pos="-0.007 0 0.109" quat="0.707107 0.707107 0 0" mass="5.383" diaginertia="0.0471 0.03094 0.02554"/>
+        <joint name="torso_y" pos="0 0 0" axis="0 0 1" range="-1.88496 1.88496" actuatorfrcrange="-1000 1000" damping="0.1"/>
+        <geom size="0.1 0.125 0.115" pos="-0.01 0 0.11" type="box"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_chest_link"/>
+        <body name="l_arm_sh_p1_link" pos="0 0.152 0.16">
+          <inertial pos="-0.003 0.02 -0.005" quat="0.290774 0.644555 0.290774 0.644555" mass="0.194" diaginertia="0.000615311 0.000534689 0.00018"/>
+          <joint name="l_arm_sh_p1" pos="0 0 0" axis="0 1 0" range="-1.5708 1.5708" actuatorfrcrange="-1000 1000" damping="0.1"/>
+          <geom size="0.075 0.05 0.045" pos="0 0.03 -0.01" type="box"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_arm_sh_p1_link"/>
+          <body name="l_arm_sh_r_link" pos="0.057 0.06 -0.039">
+            <inertial pos="-0.06 0.002 0" quat="0 0.707107 0 0.707107" mass="0.875" diaginertia="0.00113 0.00112 0.00043"/>
+            <joint name="l_arm_sh_r" pos="0 0 0" axis="-1 0 0" range="-1.5708 1.5708" actuatorfrcrange="-1000 1000" damping="0.1"/>
+            <geom size="0.07 0.045 0.045" pos="-0.057 0 0" type="box"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_arm_sh_r_link"/>
+            <body name="l_arm_sh_p2_link" pos="-0.057 0.033 0">
+              <inertial pos="0 0.073 0" quat="0.698211 0.715544 0.0117076 -0.0189807" mass="1.122" diaginertia="0.00277063 0.00255056 0.000898812"/>
+              <joint name="l_arm_sh_p2" pos="0 0 0" axis="0 1 0" range="-1.5708 1.5708" actuatorfrcrange="-1000 1000" damping="0.1"/>
+              <geom size="0.05 0.12 0.065" pos="0.01 0.11 0" type="box"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_arm_sh_p2_link"/>
+              <body name="l_arm_el_y_link" pos="0.03 0.187 0.057">
+                <inertial pos="0.042 0.012 -0.058" quat="0.446353 0.433461 0.551568 0.555566" mass="1.357" diaginertia="0.00583198 0.00528093 0.00128709"/>
+                <joint name="l_arm_el_y" pos="0 0 0" axis="0 0 -1" range="-1.25664 1.25664" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                <geom size="0.085 0.05 0.04" pos="0.08 0.01 -0.057" type="box"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_arm_el_y_link"/>
+                <body name="l_arm_wr_r_link" pos="0.171 0.03 -0.057">
+                  <inertial pos="0.01 0 0.002" mass="0.087" diaginertia="0.00012 0.00011 3e-05"/>
+                  <joint name="l_arm_wr_r" pos="0 0 0" axis="1 0 0" range="-2.82743 2.82743" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                  <geom size="0.025 0.025 0.055" pos="0.02 0 0" type="box"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_arm_wr_r_link"/>
+                  <body name="l_arm_wr_y_link" pos="0.039 0 0.045">
+                    <inertial pos="0.023 0.001 -0.046" quat="0.250331 0.604354 0.289449 0.698792" mass="0.768" diaginertia="0.000784121 0.00078 0.000585879"/>
+                    <joint name="l_arm_wr_y" pos="0 0 0" axis="0 0 -1" range="-1.41372 1.41372" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                    <geom size="0.045 0.05 0.045" pos="0.03 0 -0.045" type="box"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_arm_wr_y_link"/>
+                    <body name="l_arm_wr_p_link" pos="0.045 -0.045 -0.045">
+                      <inertial pos="0.065 0.045 0" quat="0.545231 0.450248 -0.545231 0.450248" mass="0.565" diaginertia="0.00058 0.000471926 0.000418074"/>
+                      <joint name="l_arm_wr_p" pos="0 0 0" axis="0 -1 0" range="-1.41372 1.41372" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                      <geom size="0.035 0.05 0.03" pos="0.07 0.045 0" type="box"/>
+                      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_arm_wr_p_link"/>
+                      <body name="l_arm_grip_link" pos="0.0877 0.0583 0" quat="0.939693 0 0 0.34202">
+                        <inertial pos="0.031 0.014 0" mass="0.013" diaginertia="1e-05 1e-05 1e-05"/>
+                        <joint name="l_arm_grip" pos="0 0 0" axis="0 0 -1" range="0 1.13446" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_arm_grip_link"/>
+                      </body>
+                      <body name="l_arm_grip_1_link" pos="0.0877 0.0317 0" quat="0.939693 0 0 -0.34202">
+                        <inertial pos="0.031 -0.014 0" mass="0.013" diaginertia="1e-05 1e-05 1e-05"/>
+                        <joint name="l_arm_grip_1" pos="0 0 0" axis="0 0 1" range="0 1.13446" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_arm_grip_1_link"/>
+                      </body>
+                      <body name="l_arm_end_link" pos="0.145 0.045 0">
+                        <inertial pos="0 0 0" mass="0.001" diaginertia="0.001 0.001 0.001"/>
+                        <geom size="0.005 0.005 0.005" type="box" contype="0" conaffinity="0" group="1" density="0" rgba="0.8 0 0 1"/>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+        <body name="r_arm_sh_p1_link" pos="0 -0.152 0.16">
+          <inertial pos="-0.003 -0.02 -0.005" quat="0.644555 0.290774 0.644555 0.290774" mass="0.194" diaginertia="0.000615311 0.000534689 0.00018"/>
+          <joint name="r_arm_sh_p1" pos="0 0 0" axis="0 -1 0" range="-1.5708 1.5708" actuatorfrcrange="-1000 1000" damping="0.1"/>
+          <geom size="0.075 0.05 0.045" pos="0 -0.03 -0.01" type="box"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_arm_sh_p1_link"/>
+          <body name="r_arm_sh_r_link" pos="0.057 -0.06 -0.039">
+            <inertial pos="-0.06 -0.002 0" quat="0 0.707107 0 0.707107" mass="0.875" diaginertia="0.00113 0.00112 0.00043"/>
+            <joint name="r_arm_sh_r" pos="0 0 0" axis="-1 0 0" range="-1.5708 1.5708" actuatorfrcrange="-1000 1000" damping="0.1"/>
+            <geom size="0.07 0.045 0.045" pos="-0.057 0 0" type="box"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_arm_sh_r_link"/>
+            <body name="r_arm_sh_p2_link" pos="-0.057 -0.033 0">
+              <inertial pos="0 -0.073 0" quat="0.715544 0.698211 0.0189807 -0.0117076" mass="1.122" diaginertia="0.00277063 0.00255056 0.000898812"/>
+              <joint name="r_arm_sh_p2" pos="0 0 0" axis="0 -1 0" range="-1.5708 1.5708" actuatorfrcrange="-1000 1000" damping="0.1"/>
+              <geom size="0.05 0.12 0.065" pos="0.01 -0.11 0" type="box"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_arm_sh_p2_link"/>
+              <body name="r_arm_el_y_link" pos="0.03 -0.187 0.057">
+                <inertial pos="0.042 -0.012 -0.058" quat="0.555566 0.551568 0.433461 0.446353" mass="1.357" diaginertia="0.00583198 0.00528093 0.00128709"/>
+                <joint name="r_arm_el_y" pos="0 0 0" axis="0 0 -1" range="-1.25664 1.25664" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                <geom size="0.085 0.05 0.04" pos="0.08 -0.01 -0.057" type="box"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_arm_el_y_link"/>
+                <body name="r_arm_wr_r_link" pos="0.171 -0.03 -0.057">
+                  <inertial pos="0.01 0 -0.002" mass="0.087" diaginertia="0.00012 0.00011 3e-05"/>
+                  <joint name="r_arm_wr_r" pos="0 0 0" axis="1 0 0" range="-2.82743 2.82743" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                  <geom size="0.025 0.025 0.055" pos="0.02 0 0" type="box"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_arm_wr_r_link"/>
+                  <body name="r_arm_wr_y_link" pos="0.039 0 0.045">
+                    <inertial pos="0.023 -0.001 -0.046" quat="-0.250331 0.604354 -0.289449 0.698792" mass="0.768" diaginertia="0.000784121 0.00078 0.000585879"/>
+                    <joint name="r_arm_wr_y" pos="0 0 0" axis="0 0 -1" range="-1.41372 1.41372" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                    <geom size="0.045 0.05 0.045" pos="0.03 0 -0.045" type="box"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_arm_wr_y_link"/>
+                    <body name="r_arm_wr_p_link" pos="0.045 0.045 -0.045">
+                      <inertial pos="0.065 -0.045 0" quat="0.450248 0.545231 -0.450248 0.545231" mass="0.565" diaginertia="0.00058 0.000471926 0.000418074"/>
+                      <joint name="r_arm_wr_p" pos="0 0 0" axis="0 1 0" range="-1.41372 1.41372" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                      <geom size="0.035 0.05 0.03" pos="0.07 -0.045 0" type="box"/>
+                      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_arm_wr_p_link"/>
+                      <body name="r_arm_grip_link" pos="0.0877 -0.0583 0" quat="0.939693 0 0 -0.34202">
+                        <inertial pos="0.031 -0.014 0" mass="0.013" diaginertia="1e-05 1e-05 1e-05"/>
+                        <joint name="r_arm_grip" pos="0 0 0" axis="0 0 1" range="0 1.13446" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_arm_grip_1_link"/>
+                      </body>
+                      <body name="r_arm_grip_1_link" pos="0.0877 -0.0317 0" quat="0.939693 0 0 0.34202">
+                        <inertial pos="0.031 0.014 0" mass="0.013" diaginertia="1e-05 1e-05 1e-05"/>
+                        <joint name="r_arm_grip_1" pos="0 0 0" axis="0 0 -1" range="0 1.13446" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_arm_grip_link"/>
+                      </body>
+                      <body name="r_arm_end_link" pos="0.145 -0.045 0">
+                        <inertial pos="0 0 0" mass="0.001" diaginertia="0.001 0.001 0.001"/>
+                        <geom size="0.005 0.005 0.005" type="box" contype="0" conaffinity="0" group="1" density="0" rgba="0.8 0 0 1"/>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+        <body name="head_y_link" pos="0 0 0.229">
+          <inertial pos="0 0 0" mass="1" diaginertia="0.001 0.001 0.001"/>
+          <joint name="head_y" pos="0 0 0" axis="0 0 1" range="-1.5708 1.5708" actuatorfrcrange="-1000 1000" damping="0.1"/>
+          <geom size="0.035 0.05 0.05" type="box"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_head_y_link"/>
+          <body name="head_p_link" pos="0 -0.045 0.039">
+            <inertial pos="0 0 0" mass="1" diaginertia="0.001 0.001 0.001"/>
+            <joint name="head_p" pos="0 0 0" axis="0 1 0" range="-1.5708 1.5708" actuatorfrcrange="-1000 1000" damping="0.1"/>
+            <geom size="0.065 0.075 0.075" pos="0.01 0.045 0.06" type="box"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_head_p_link"/>
+            <body name="cam_link" pos="0.0682 0.045 0.056" quat="0.5 -0.5 0.5 -0.5"/>
+            <body name="lidar_link" pos="0 0.045 0.10675"/>
+            <body name="realsense_link" pos="0.0529 -0.009 0.0292"/>
+          </body>
+        </body>
+      </body>
+      <body name="imu_link" pos="0.03 0 0" quat="-2.05103e-10 0 0 1"/>
+      <body name="l_leg_hip_y_link" pos="0 0.093 -0.018">
+        <inertial pos="0.012 0 -0.025" quat="0.5 0.5 0.5 0.5" mass="0.243" diaginertia="0.00101 0.00092 0.00024"/>
+        <joint name="l_leg_hip_y" pos="0 0 0" axis="0 0 -1" range="-1.41372 1.41372" actuatorfrcrange="-1000 1000" damping="0.1"/>
+        <geom size="0.085 0.035 0.05" pos="-0.01 0 -0.05" type="box"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_leg_hip_y_link"/>
+        <body name="l_leg_hip_r_link" pos="0.057 0 -0.075">
+          <inertial pos="-0.068 0 0" quat="0 0.707107 0 0.707107" mass="1.045" diaginertia="0.00171 0.00168 0.00056"/>
+          <joint name="l_leg_hip_r" pos="0 0 0" axis="-1 0 0" range="-0.628319 0.942478" actuatorfrcrange="-1000 1000" damping="0.1"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_leg_hip_r_link"/>
+          <body name="l_leg_hip_p_link" pos="-0.057 0.033 0">
+            <inertial pos="0.022 -0.007 -0.168" quat="0.998658 -0.0296904 -0.0373719 0.0200934" mass="3.095" diaginertia="0.0435042 0.0405325 0.0052633"/>
+            <joint name="l_leg_hip_p" pos="0 0 0" axis="0 1 0" range="-1.25664 1.25664" actuatorfrcrange="-1000 1000" damping="0.1"/>
+            <geom size="0.055 0.08 0.165" pos="0 -0.005 -0.145" type="box"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_leg_hip_p_link"/>
+            <body name="l_leg_kn_p_link" pos="0 0.06 -0.3">
+              <inertial pos="-0.002 -0.066 -0.183" quat="0.993261 0.0600407 0.0991149 -0.00189569" mass="2.401" diaginertia="0.0203037 0.0170426 0.00497371"/>
+              <joint name="l_leg_kn_p" pos="0 0 0" axis="0 1 0" range="-0.314159 2.19911" actuatorfrcrange="-1000 1000" damping="0.1"/>
+              <geom size="0.055 0.08 0.165" pos="0.01 -0.065 -0.145" type="box"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_leg_kn_p_link"/>
+              <body name="l_leg_an_p_link" pos="0 -0.06 -0.3">
+                <inertial pos="-0.011 -0.033 0" quat="0 0.707107 0 0.707107" mass="1.045" diaginertia="0.00171 0.00168 0.00056"/>
+                <joint name="l_leg_an_p" pos="0 0 0" axis="0 -1 0" range="-1.41372 1.41372" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_leg_an_p_link"/>
+                <body name="l_leg_an_r_link" pos="0.057 -0.033 0">
+                  <inertial pos="-0.07 0 -0.048" quat="0.503609 0.496365 0.496365 0.503609" mass="0.223" diaginertia="0.00099 0.000910145 0.000219855"/>
+                  <joint name="l_leg_an_r" pos="0 0 0" axis="1 0 0" range="-1.5708 1.25664" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                  <geom size="0.085 0.03 0.06" pos="-0.067 0 -0.02" type="box"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_leg_an_r_link"/>
+                  <body name="l_leg_foot_link" pos="-0.057 0 -0.087">
+                    <inertial pos="0 0.009 -0.013" quat="0.0219795 0.706765 0.0219795 0.706765" mass="1.689" diaginertia="0.00609685 0.00432315 0.00219"/>
+                    <geom size="0.11 0.075 0.0075" pos="0 0.014 -0.02" type="box"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_l_leg_foot"/>
+                    <body name="l_foot_ft_link" quat="-2.05103e-10 1 0 0"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="r_leg_hip_y_link" pos="0 -0.093 -0.018">
+        <inertial pos="-0.012 0 -0.025" quat="0.5 0.5 0.5 0.5" mass="0.243" diaginertia="0.00101 0.00092 0.00024"/>
+        <joint name="r_leg_hip_y" pos="0 0 0" axis="0 0 -1" range="-1.41372 1.41372" actuatorfrcrange="-1000 1000" damping="0.1"/>
+        <geom size="0.085 0.035 0.05" pos="-0.01 0 -0.05" type="box"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_leg_hip_y_link"/>
+        <body name="r_leg_hip_r_link" pos="0.057 0 -0.075">
+          <inertial pos="-0.068 0 0" quat="0 0.707107 0 0.707107" mass="1.045" diaginertia="0.00171 0.00168 0.00056"/>
+          <joint name="r_leg_hip_r" pos="0 0 0" axis="-1 0 0" range="-0.942478 0.628319" actuatorfrcrange="-1000 1000" damping="0.1"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_leg_hip_r_link"/>
+          <body name="r_leg_hip_p_link" pos="-0.057 -0.033 0">
+            <inertial pos="0.022 0.007 -0.168" quat="0.996439 -0.0256663 -0.0391951 -0.0701" mass="3.095" diaginertia="0.0435544 0.0404746 0.00527103"/>
+            <joint name="r_leg_hip_p" pos="0 0 0" axis="0 -1 0" range="-1.25664 1.25664" actuatorfrcrange="-1000 1000" damping="0.1"/>
+            <geom size="0.055 0.08 0.165" pos="0 0.005 -0.145" type="box"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_leg_hip_p_link"/>
+            <body name="r_leg_kn_p_link" pos="0 -0.06 -0.3">
+              <inertial pos="-0.002 0.066 -0.183" quat="0.993261 -0.0600407 0.0991149 0.00189569" mass="2.401" diaginertia="0.0203037 0.0170426 0.00497371"/>
+              <joint name="r_leg_kn_p" pos="0 0 0" axis="0 -1 0" range="-2.19911 0.314159" actuatorfrcrange="-1000 1000" damping="0.1"/>
+              <geom size="0.055 0.08 0.165" pos="0.01 0.065 -0.145" type="box"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_leg_kn_p_link"/>
+              <body name="r_leg_an_p_link" pos="0 0.06 -0.3">
+                <inertial pos="-0.011 0.033 0" quat="0 0.707107 0 0.707107" mass="1.045" diaginertia="0.00171 0.00168 0.00056"/>
+                <joint name="r_leg_an_p" pos="0 0 0" axis="0 1 0" range="-1.41372 1.41372" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_leg_an_p_link"/>
+                <body name="r_leg_an_r_link" pos="0.057 0.033 0">
+                  <inertial pos="-0.07 0 -0.048" quat="0.503609 0.496365 0.496365 0.503609" mass="0.223" diaginertia="0.00099 0.000910145 0.000219855"/>
+                  <joint name="r_leg_an_r" pos="0 0 0" axis="1 0 0" range="-1.41372 1.41372" actuatorfrcrange="-1000 1000" damping="0.1"/>
+                  <geom size="0.085 0.03 0.06" pos="-0.067 0 -0.02" type="box"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_leg_an_r_link"/>
+                  <body name="r_leg_foot_link" pos="-0.057 0 -0.087">
+                    <inertial pos="0 -0.009 -0.013" quat="-0.0219795 0.706765 -0.0219795 0.706765" mass="1.689" diaginertia="0.00609685 0.00432315 0.00219"/>
+                    <geom size="0.11 0.075 0.0075" pos="0 -0.014 -0.02" type="box"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.2 0.2 0.2 1" mesh="robotis_r_leg_foot"/>
+                    <body name="r_foot_ft_link" quat="-2.05103e-10 1 0 0"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

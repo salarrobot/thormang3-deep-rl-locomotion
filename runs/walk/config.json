@@ -1,0 +1,35 @@
+{
+  "cfg": {
+    "model_path": "/home/ntnu/Desktop/MuJoco/thormang3_walk/assets/thormang3_scene.xml",
+    "frame_skip": 8,
+    "action_scale": 0.4,
+    "target_speed": 0.8,
+    "w_alive": 1.0,
+    "w_forward": 2.0,
+    "w_upright": 0.4,
+    "w_height": 0.4,
+    "w_ctrl": 0.02,
+    "w_action_rate": 0.05,
+    "w_lateral": 0.25,
+    "w_yaw_rate": 0.15,
+    "w_joint_vel": 0.0002,
+    "min_height": 0.55,
+    "max_height": 1.05,
+    "min_upright": 0.5,
+    "max_steps": 1000,
+    "noise_qpos": 0.03,
+    "noise_qvel": 0.05
+  },
+  "args": {
+    "run": "runs/walk",
+    "timesteps": 30000000,
+    "n_envs": 12,
+    "seed": 0,
+    "device": "cuda",
+    "lr": 0.0003,
+    "target_speed": 0.8,
+    "eval_freq": 250000,
+    "ckpt_freq": 1000000,
+    "resume": false
+  }
+}

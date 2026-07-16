@@ -1,4 +1,5 @@
 # Learning Bipedal Locomotion for THORMANG3 with Deep RL
+> By Salar Mokhttari Laleh
 
 
 A complete reinforcement-learning pipeline that teaches the
